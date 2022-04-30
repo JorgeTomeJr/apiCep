@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Busca Cep</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="https://buscacepinter.correios.com.br/core/templates/bunker/img/favi-ect.png"/>
+</head>
+<body>
+
+    <header>
+        <a class="logo" href="https://buscacepinter.correios.com.br/app/index.php"><img src="logo-ect.svg" alt=""></a>
+    </header>
+    <div class="informativo">
+        <p>Portal Correios > Busca por Endereço ou CEP</p>
+    </div>
+
+    <main>
+        <div class="container">
+        <h1 class="titulo-buscaCep">Busca Cep</h1>
+            <div class="campo">
+                <label class="label" for="cepDigitado">Digite um CEP ou um endereço</label>
+                <input id="cepDigitado" type="text" maxlength="8">
+            </div>    
+
+            <button id="botaocep" onclick="testeI()">Buscar</button>
+
+            <section id="wraper-table">
+                <table>
+                    <h1 class="tituloTable" >Resultado da busca por Endereço ou Cep</h1>
+                    <thead>
+                        <tr>
+                            <th>Logradouro/Nome</th>
+                            <th>Bairro/Distrito</th>
+                            <th>Localidade/UF</th>
+                            <th>CEP</th>
+                        </tr>
+                    </thead>
+    
+                    <tbody id="tbody">
+    
+                    </tbody>
+                </table>
+            </section>
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <section class="footer-info">
+                <div class="card">
+                    <h4>Fale Conosco</h4>
+                    <ul>
+                        <li><a href="#">Registro de Manifestações</a></li>
+                        <li><a href="#">Chat</a></li>
+                        <li><a href="#">Central de Alimento</a></li>
+                        <li><a href="#">Soluções para o seu negócio</a></li>
+                        <li><a href="#">Suporte ao Cliente com Contrato</a></li>
+                        <li><a href="#">Ouvidoria</a></li>
+                        <li><a href="#">Denuncia</a></li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h4>Sobre Correios</h4>
+                    <ul>
+                        <li><a href="#">Identidade Corporativa</a></li>
+                        <li><a href="#">Educação e Cultura</a></li>
+                        <li><a href="#">Código de Ética</a></li>
+                        <li><a href="#">Venda de Imóveis</a></li>
+                        <li><a href="#">Gestão do Portal Correios (acesso restrito)</a></li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h4>Outros Sites</h4>
+                    <ul>
+                        <li><a href="#">Registro de Manifestações</a></li>
+                        <li><a href="#">Chat</a></li>
+                    </ul>
+                </div>
+            </section>
+            <section class="copy">
+                © Copyright 2020 Correios
+            </section>
+        </div>
+    </footer>
+
+
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="script.js"></script>
+</body>
+</html>
